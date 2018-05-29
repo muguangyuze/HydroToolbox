@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HydroToolbox"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="HydroToolbox" Height="600" Width="800">
     <Grid>
-        
+        <DockPanel HorizontalAlignment="Left" LastChildFill="True" VerticalAlignment="Top">
+            <Menu VerticalAlignment="Top">
+                <MenuItem Header="File" FontStretch="Medium">
+                    <MenuItem Header="New..."/>
+                    <MenuItem Header="Open..."/>
+                    <MenuItem Header="Close..."/>
+                </MenuItem>
+
+            </Menu>
+
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Left" LastChildFill="True" Margin="0,17,0,0">
+            <Image Source="/resources/background.jpg" Stretch="Fill" VerticalAlignment="Top"/>
+        </DockPanel>
     </Grid>
 </Window>
